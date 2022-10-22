@@ -1,9 +1,15 @@
+package actor;
+
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Behavior;
 import akka.actor.typed.javadsl.AbstractBehavior;
 import akka.actor.typed.javadsl.ActorContext;
 import akka.actor.typed.javadsl.Behaviors;
 import akka.actor.typed.javadsl.Receive;
+import command.Command;
+import command.NumberCommand;
+import command.StartCommand;
+import command.StopCommand;
 
 public class GuardianActor extends AbstractBehavior<Command> {
 

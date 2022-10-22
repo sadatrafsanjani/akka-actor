@@ -1,9 +1,14 @@
+package actor;
+
 import akka.actor.typed.Behavior;
 import akka.actor.typed.PostStop;
 import akka.actor.typed.javadsl.AbstractBehavior;
 import akka.actor.typed.javadsl.ActorContext;
 import akka.actor.typed.javadsl.Behaviors;
 import akka.actor.typed.javadsl.Receive;
+import command.Command;
+import command.NumberCommand;
+import command.StopCommand;
 
 public class TransactionActor extends AbstractBehavior<Command> {
 

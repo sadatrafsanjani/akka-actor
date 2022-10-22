@@ -1,3 +1,5 @@
+package command;
+
 import akka.actor.typed.ActorRef;
 
 public class NumberCommand implements Command {

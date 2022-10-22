@@ -1,3 +1,5 @@
+package command;
+
 import java.util.List;
 
 public class StartCommand implements Command {
